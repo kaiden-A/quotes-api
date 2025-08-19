@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/api/quotes' ,async (req , res) => {
 
-    const data = await readJsonFile('./json/quotes.js');
+    const data = await readJsonFile('./json/quotes.json');
     
     const limit = req.query.limit || data.length;
 
